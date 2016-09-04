@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="90" style="float:left">
+    <defs>
+        <filter id="colorMask1">
+            <feFlood flood-color="#ff0000" result="flood" />
+            <feComposite in="SourceGraphic" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+        </filter>
+    </defs>
+    <image width="100%" height="100%" xlink:href="http://i.stack.imgur.com/OyP0g.jpg" filter="url(#colorMask1)" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="90" style="float:left">
+<defs>
+    <filter id="colorMask2">
+        <feFlood flood-color="#00ff00" result="flood" />
+        <feComposite in="SourceGraphic" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+    </filter>
+</defs>
+<image width="100%" height="100%" xlink:href="http://i.stack.imgur.com/OyP0g.jpg" filter="url(#colorMask2)" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="90" style="float:left">
+<defs>
+    <filter id="colorMask3">
+        <feFlood flood-color="#0000ff" result="flood" />
+        <feComposite in="SourceGraphic" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+    </filter>
+</defs>
+<image width="100%" height="100%" xlink:href="http://i.stack.imgur.com/OyP0g.jpg" filter="url(#colorMask3)" />
+</svg>

@@ -5,10 +5,16 @@
 <head>
 <title>Software Engineer</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900&subset=latin-ext" rel="stylesheet">
+	<style>
+		.world {
+			-webkit-filter: blur(1.5px) contrast(99%) brightness(99%) saturate(900%);
+			filter: blur(1.5px) contrast(99%) brightness(99%) saturate(900%);
+		}
+	</style>
 </head>
-<body>
+<body bgcolor="#f0e190">
     <!-- Font selection https://fonts.google.com/specimen/Lato?selection.family=Lato:400,900&selection.subset=latin-ext -->
-	<div id="container" style="width: 88%; margin: 0 6%; font-family: 'Lato', sans-serif;">
+	<div id="container" style="width: 88%; margin: 0 6%; font-family: 'Lato', sans-serif; color: #854111;">
 		<div id="left"
 			style="width: 46%; float: left; font-size: 2.2em">
 			<h1 style="margin-bottom: 0">Software Engineer</h1>
@@ -31,7 +37,20 @@
 		<div id="right" style="width: 52%; float: right; font-size: 2em">
 			<h2>Native Range</h2>
 			<!-- original image http://i.imgur.com/rM392EV.png -->
-			<img height="100%" width="100%" src="rM392EV.png"/>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="900px" height="450px" style=";">
+                <defs>
+                    <filter id="colorMask1">
+                        <feFlood flood-color="#f0e190" result="flood" />
+                        <feComposite in="SourceGraphic" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+                    </filter>
+                </defs>
+			    <image height="100%" width="100%" xlink:href="rM392EV.png" filter="url(#colorMask1)"/>
+                <circle cx="430" cy="160" r="40" stroke="#854111" stroke-width="0" fill="#f58d45" style="opacity:0.4" />
+                <circle cx="140" cy="180" r="40" stroke="#854111" stroke-width="0" fill="#f58d45" style="opacity:0.4" />
+                <circle cx="220" cy="190" r="40" stroke="#854111" stroke-width="0" fill="#f58d45" style="opacity:0.4" />
+            </svg>
+            <!--<img height="100%" width="100%" src="rM392EV.png" class="world"/>-->
+
 			<p>
 				<strong>Diet: </strong>Pizza, Caffeinated beverages, Mars bars, Crisps
 			</p>
